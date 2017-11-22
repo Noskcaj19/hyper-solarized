@@ -1,0 +1,23 @@
+{
+  "name": "hyper-solarized-darker",
+  "version": "0.1.0",
+  "description": "Solarized theme for Hyper",
+  "main": "index.js",
+  "keywords": [
+    "hyper",
+    "hyper-theme",
+    "colors",
+    "theme",
+    "solarized"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noskcaj19/hyper-solarized.git"
+  },
+  "author": "Noskcaj19",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Noskcaj19/hyper-solarized/issues"
+  },
+  "homepage": "https://github.com/Noskcaj19/hyper-solarized"
+}
