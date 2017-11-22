@@ -1,8 +1,3 @@
-const backgroundColor = '#002833';
-const foregroundColor = '#839496';
-const cursorColor = '#839496';
-const borderColor = 'transparent';
-
 const colors = {
   lightBlack: '#002833',
   black: '#003541',
@@ -22,8 +17,16 @@ const colors = {
   green: '#859901'
 };
 
-
 exports.decorateConfig = config => {
+  const light = config.solarized ? config.solarized.light : false;
+
+  const backgroundColor = light ? '#fdf6e3' : '#002833';
+  const foregroundColor = light ? '#657b83' : '#839496';
+  const cursorColor     = light ? '#657b83' : '#839496';
+  const splitplaneColor = light ? '#e6dfcb' : '#001f27';
+  const tabsColor       = light ? '#e6dfcb' : '#001f27';
+  const borderColor     = 'transparent';
+
   return Object.assign({}, config, {
     foregroundColor,
     backgroundColor,
@@ -43,12 +46,11 @@ exports.decorateConfig = config => {
       	border: 0;
       }
       .tabs_nav {
-      	background-color: #001f27;
-
+      	background-color: ${tabsColor};
       }
       .tab_tab {
         color: ${foregroundColor};
-        background-color: #001f27;
+        background-color: ${tabsColor};
 				border-color: ${borderColor};
       }
       .tab_tab:before {
@@ -61,7 +63,7 @@ exports.decorateConfig = config => {
         background-color: ${backgroundColor};
       }
       .splitpane_divider {
-      	background-color: #001f27;
+      	background-color: ${splitplaneColor};
       }
     `
   })
