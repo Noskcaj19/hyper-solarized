@@ -2,7 +2,17 @@
 
 Surprisingly, I was unable to find a Solarized theme for Hyper, so I made my own.
 
-Not on npm, so install by adding to the `~/.hyper_plugins/local/` directory and adding it to your `.hyper.js` `localPlugins`
+# Installation
+
+## Hyper package manager
+```
+$ hyper i hyper-solarized-patched
+```
+
+## Manually
+Add `'hyper-solarized-patched'` to your `plugins` array in the `~/.hyper.js` config file
+
+# Configuration
 
 Change to the light variant by adding
 ```js

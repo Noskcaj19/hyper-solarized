@@ -1,7 +1,7 @@
 {
-  "name": "hyper-solarized-darker",
+  "name": "hyper-solarized-patched",
   "version": "0.1.0",
-  "description": "Solarized theme for Hyper",
+  "description": "Fixed Solarized theme for Hyper",
   "main": "index.js",
   "keywords": [
     "hyper",
